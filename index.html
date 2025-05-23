@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ghost Pixel</title>
+  <style>
+    body {
+      background-color: #000; /* fundo preto */
+      color: #fff; /* texto branco */
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      padding: 40px;
+      user-select: none;
+    }
+    .ghost {
+      font-size: 150px;
+      line-height: 1;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 5px #fff);
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    h1 {
+      font-weight: normal;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 20px;
+      color: #bbb;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="ghost">👻</div>
+  <h1>Bem-vindo ao mundo dos fantasmas</h1>
+  <p>Um site simples com tema pixel art preto e branco — só pra assustar (ou encantar)!</p>
+</body>
+</html>
